@@ -121,6 +121,23 @@ const dataCenters = [
     region: "middle-east",
     source: "https://mei.edu/report/from-crude-to-compute-building-the-gcc-ai-stack/"
   },
+  {
+    project: "Stargate Argentina",
+    company: "OpenAI / Sur Energy",
+    location: "Patagonia, Argentina",
+    lat: -44.0,
+    lng: -70.0,
+    investment: "Up to $25B",
+    capacity: "Up to 500 MW",
+    capacityMW: 500,
+    size: "Not disclosed",
+    status: "Announced",
+    expected: "TBD",
+    details: "First Stargate site in Latin America, announced October 2025. AMD supplying up to 6 GW of Instinct GPUs; Broadcom supplying 10 GW of custom hardware. OpenAI may acquire a 10% stake in AMD contingent on milestones. Will be the largest data center in Latin America upon completion.",
+    category: "stargate",
+    region: "latam",
+    source: "https://en.wikipedia.org/wiki/Stargate_LLC"
+  },
 
   // ===== HYPERSCALERS =====
   // --- Microsoft ---
@@ -316,6 +333,40 @@ const dataCenters = [
     source: "https://fortune.com/2026/02/04/meta-hyperion-ai-data-center-louisiana-expansion/"
   },
   {
+    project: "Meta Prometheus",
+    company: "Meta",
+    location: "New Albany, Ohio, USA",
+    lat: 40.08,
+    lng: -82.79,
+    investment: "$1.5B+ (campus investment)",
+    capacity: "1 GW",
+    capacityMW: 1000,
+    size: "Multiple buildings, tent-style structures",
+    status: "Under Construction",
+    expected: "Online 2026",
+    details: "World's first gigawatt-scale AI data center supercluster. Tent-style structures for rapid deployment and efficient cooling. Powered by nuclear agreements with TerraPower, Oklo, and Vistra supporting up to 6.6 GW of clean energy by 2035.",
+    category: "hyperscaler",
+    region: "north-america",
+    source: "https://www.nbc4i.com/news/local-news/new-albany/meet-prometheus-worlds-highest-capacity-data-center-slated-to-open-in-ohio-in-2026/"
+  },
+  {
+    project: "Meta Lebanon",
+    company: "Meta",
+    location: "Lebanon, Indiana, USA",
+    lat: 40.05,
+    lng: -86.47,
+    investment: "$10B+",
+    capacity: "1 GW",
+    capacityMW: 1000,
+    size: "Not disclosed",
+    status: "Broke Ground (Feb 2026)",
+    expected: "TBD",
+    details: "Meta's second Indiana campus in Boone County, ~29 miles northwest of Indianapolis. 4,000+ peak construction jobs, ~300 operational positions. Gigawatt-scale designed to support both AI workloads and core products. Energy and water restoration commitments to Boone County.",
+    category: "hyperscaler",
+    region: "north-america",
+    source: "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/"
+  },
+  {
     project: "Meta Beaver Dam",
     company: "Meta",
     location: "Beaver Dam, Wisconsin, USA",
@@ -401,6 +452,23 @@ const dataCenters = [
     category: "hyperscaler",
     region: "north-america",
     source: "https://www.aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers"
+  },
+  {
+    project: "AWS Pennsylvania — Salem & Falls Township",
+    company: "Amazon / AWS",
+    location: "Salem Township & Falls Township, Pennsylvania, USA",
+    lat: 41.19,
+    lng: -75.98,
+    investment: "$20B",
+    capacity: "~1.92 GW (Salem nuclear-adjacent)",
+    capacityMW: 1920,
+    size: "1,600 acres rezoned (Salem); additional at Falls Township",
+    status: "Under Construction",
+    expected: "Phased over 10 years",
+    details: "Largest private sector investment in Pennsylvania history. Salem Township site sits adjacent to Susquehanna nuclear plant with 15 buildings planned. Falls Township (Fairless Hills) at former US Steel Keystone Trade Center. ~1,250 high-skilled jobs expected.",
+    category: "hyperscaler",
+    region: "north-america",
+    source: "https://www.datacenterdynamics.com/en/news/amazon-to-invest-20bn-in-data-centers-in-pennsylvania/"
   },
 
   // ===== NEOCLOUDS =====
@@ -597,6 +665,23 @@ const dataCenters = [
     category: "independent",
     region: "north-america",
     source: "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-december-2025"
+  },
+  {
+    project: "Homer City Energy Campus",
+    company: "Homer City Redevelopment / Kiewit / EQT",
+    location: "Homer City, Indiana County, Pennsylvania, USA",
+    lat: 40.54,
+    lng: -79.1,
+    investment: "$10B+ (power infrastructure alone)",
+    capacity: "4.5 GW (power plant); data center TBD",
+    capacityMW: 4500,
+    size: "3,200 acres",
+    status: "Under Construction",
+    expected: "Power production 2027",
+    details: "Former Homer City coal plant redeveloped into the US's largest natural gas-powered data center campus. Seven GE Vernova 7HA.02 hydrogen-enabled turbines; EQT Corporation as exclusive gas supplier. Built by Kiewit. Financed by Knighthead Capital. Will serve multiple large hyperscale data center tenants.",
+    category: "independent",
+    region: "north-america",
+    source: "https://www.homercityredevelopment.com/project-overview"
   },
 
   // ===== SOVEREIGN / INTERNATIONAL =====
@@ -861,93 +946,7 @@ const dataCenters = [
     category: "independent",
     region: "latam",
     source: "https://www.abiresearch.com/blog/data-centers-by-region-size-company"
-  },
-  // ===== MISSING PROJECTS =====
-{
-  project: "Meta Prometheus",
-  company: "Meta",
-  location: "New Albany, Ohio, USA",
-  lat: 40.08,
-  lng: -82.79,
-  investment: "$1.5B+ (campus investment)",
-  capacity: "1 GW",
-  capacityMW: 1000,
-  size: "Multiple buildings, tent-style structures",
-  status: "Under Construction",
-  expected: "Online 2026",
-  details: "World's first gigawatt-scale AI data center supercluster. Tent-style structures for rapid deployment and efficient cooling. Powered by nuclear agreements with TerraPower, Oklo, and Vistra supporting up to 6.6 GW of clean energy by 2035.",
-  category: "hyperscaler",
-  region: "north-america",
-  source: "https://www.nbc4i.com/news/local-news/new-albany/meet-prometheus-worlds-highest-capacity-data-center-slated-to-open-in-ohio-in-2026/"
-},
-{
-  project: "Meta Lebanon",
-  company: "Meta",
-  location: "Lebanon, Indiana, USA",
-  lat: 40.05,
-  lng: -86.47,
-  investment: "$10B+",
-  capacity: "1 GW",
-  capacityMW: 1000,
-  size: "Not disclosed",
-  status: "Broke Ground (Feb 2026)",
-  expected: "TBD",
-  details: "Meta's second Indiana campus in Boone County, ~29 miles northwest of Indianapolis. 4,000+ peak construction jobs, ~300 operational positions. Gigawatt-scale designed to support both AI workloads and core products. Energy and water restoration commitments to Boone County.",
-  category: "hyperscaler",
-  region: "north-america",
-  source: "https://about.fb.com/news/2026/02/metas-new-data-center-lebanon-indiana-marks-milestone-ai-investment/"
-},
-{
-  project: "AWS Pennsylvania — Salem & Falls Township",
-  company: "Amazon / AWS",
-  location: "Salem Township & Falls Township, Pennsylvania, USA",
-  lat: 41.19,
-  lng: -75.98,
-  investment: "$20B",
-  capacity: "~1.92 GW (Salem nuclear-adjacent)",
-  capacityMW: 1920,
-  size: "1,600 acres rezoned (Salem); additional at Falls Township",
-  status: "Under Construction",
-  expected: "Phased over 10 years",
-  details: "Largest private sector investment in Pennsylvania history. Salem Township site sits adjacent to Susquehanna nuclear plant with 15 buildings planned. Falls Township (Fairless Hills) at former US Steel Keystone Trade Center. ~1,250 high-skilled jobs expected.",
-  category: "hyperscaler",
-  region: "north-america",
-  source: "https://www.datacenterdynamics.com/en/news/amazon-to-invest-20bn-in-data-centers-in-pennsylvania/"
-},
-{
-  project: "Homer City Energy Campus",
-  company: "Homer City Redevelopment / Kiewit / EQT",
-  location: "Homer City, Indiana County, Pennsylvania, USA",
-  lat: 40.54,
-  lng: -79.1,
-  investment: "$10B+ (power infrastructure alone)",
-  capacity: "4.5 GW (power plant); data center TBD",
-  capacityMW: 4500,
-  size: "3,200 acres",
-  status: "Under Construction",
-  expected: "Power production 2027",
-  details: "Former Homer City coal plant redeveloped into the US's largest natural gas-powered data center campus. Seven GE Vernova 7HA.02 hydrogen-enabled turbines; EQT Corporation as exclusive gas supplier. Built by Kiewit. Financed by Knighthead Capital. Will serve multiple large hyperscale data center tenants.",
-  category: "independent",
-  region: "north-america",
-  source: "https://www.homercityredevelopment.com/project-overview"
-},
-{
-  project: "Stargate Argentina",
-  company: "OpenAI / Sur Energy",
-  location: "Patagonia, Argentina",
-  lat: -44.0,
-  lng: -70.0,
-  investment: "Up to $25B",
-  capacity: "Up to 500 MW",
-  capacityMW: 500,
-  size: "Not disclosed",
-  status: "Announced",
-  expected: "TBD",
-  details: "First Stargate site in Latin America, announced October 2025. AMD supplying up to 6 GW of Instinct GPUs; Broadcom supplying 10 GW of custom hardware. OpenAI may acquire a 10% stake in AMD contingent on milestones. Will be the largest data center in Latin America upon completion.",
-  category: "stargate",
-  region: "latam",
-  source: "https://en.wikipedia.org/wiki/Stargate_LLC"
-},
+  }
 ];
 
 /* ========== MAP INITIALIZATION ========== */
@@ -962,6 +961,7 @@ const categoryColors = {
 
 let map;
 let markers = [];
+let markerMap = new Map(); // keyed by project name for reliable lookup
 let activeFilter = "all";
 let activeRegion = "all";
 
@@ -976,13 +976,9 @@ function initMap() {
     scrollWheelZoom: true
   });
 
-  // Dark-themed tile layer
   updateTileLayer();
-
-  // Add markers
   addMarkers(dataCenters);
 
-  // Fit bounds
   if (markers.length > 0) {
     const group = L.featureGroup(markers);
     map.fitBounds(group.getBounds().pad(0.1));
@@ -1031,9 +1027,9 @@ function getMarkerRadius(capacityMW) {
 }
 
 function addMarkers(data) {
-  // Clear existing
   markers.forEach(m => map.removeLayer(m));
   markers = [];
+  markerMap.clear();
 
   data.forEach(dc => {
     const color = categoryColors[dc.category] || "#10b981";
@@ -1084,6 +1080,7 @@ function addMarkers(data) {
 
     marker.addTo(map);
     markers.push(marker);
+    markerMap.set(dc.project, marker);
   });
 }
 
@@ -1092,7 +1089,6 @@ function addMarkers(data) {
 function updateStats(data) {
   document.getElementById("stat-total").textContent = data.length;
 
-  // Estimate total investment
   let totalB = 0;
   data.forEach(dc => {
     const match = dc.investment.match(/\$(\d+(?:\.\d+)?)\s*B/i);
@@ -1106,7 +1102,6 @@ function updateStats(data) {
     document.getElementById("stat-investment").textContent = "$" + Math.round(totalB) + "B+";
   }
 
-  // Total capacity
   let totalMW = 0;
   data.forEach(dc => { totalMW += dc.capacityMW; });
   if (totalMW >= 1000) {
@@ -1115,7 +1110,6 @@ function updateStats(data) {
     document.getElementById("stat-capacity").textContent = totalMW + " MW";
   }
 
-  // Countries
   const countries = new Set();
   data.forEach(dc => {
     const parts = dc.location.split(",");
@@ -1149,10 +1143,8 @@ function renderTable(data) {
     row.style.cursor = "pointer";
     row.addEventListener("click", () => {
       map.setView([dc.lat, dc.lng], 8);
-      const markerIndex = dataCenters.indexOf(dc);
-      if (markers[markerIndex]) {
-        markers[markerIndex].openPopup();
-      }
+      const m = markerMap.get(dc.project);
+      if (m) m.openPopup();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
@@ -1187,7 +1179,6 @@ function filterData() {
   updateStats(filtered);
   renderTable(filtered);
 
-  // Fit bounds to filtered data
   if (markers.length > 0) {
     const group = L.featureGroup(markers);
     map.fitBounds(group.getBounds().pad(0.15));
@@ -1214,7 +1205,6 @@ document.querySelectorAll("[data-region]").forEach(btn => {
   });
 });
 
-// Mark initial active region
 document.querySelector('[data-region="all"]').classList.add("active");
 
 // Search
@@ -1239,13 +1229,11 @@ document.querySelectorAll("th[data-sort]").forEach(th => {
       sortAsc = true;
     }
 
-    // Update header indicators
     document.querySelectorAll("th[data-sort]").forEach(h => {
       h.textContent = h.textContent.replace(/ [▲▼]/, "");
     });
     th.textContent += sortAsc ? " ▲" : " ▼";
 
-    // Sort filtered data and re-render table
     const rows = Array.from(document.getElementById("table-body").children);
     rows.sort((a, b) => {
       const cellA = a.children[getColIndex(col)].textContent.trim();
@@ -1258,8 +1246,8 @@ document.querySelectorAll("th[data-sort]").forEach(th => {
 });
 
 function getColIndex(col) {
-  const map = { project: 0, company: 1, location: 2, investment: 3, capacity: 4, status: 5 };
-  return map[col] || 0;
+  const colMap = { project: 0, company: 1, location: 2, investment: 3, capacity: 4, status: 5 };
+  return colMap[col] || 0;
 }
 
 /* ========== THEME TOGGLE ========== */
@@ -1267,9 +1255,7 @@ function getColIndex(col) {
 (function() {
   const t = document.querySelector("[data-theme-toggle]");
   const r = document.documentElement;
-  let d = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  // Default to dark for this site
-  d = "dark";
+  let d = "dark";
   r.setAttribute("data-theme", d);
   if (t) {
     t.addEventListener("click", () => {
@@ -1285,6 +1271,7 @@ function getColIndex(col) {
 })();
 
 /* ========== TOOLTIP STYLE ========== */
+
 const tooltipStyle = document.createElement("style");
 tooltipStyle.textContent = `
   .custom-tooltip {

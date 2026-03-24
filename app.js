@@ -861,7 +861,7 @@ const dataCenters = [
     category: "independent",
     region: "latam",
     source: "https://www.abiresearch.com/blog/data-centers-by-region-size-company"
-  }
+  },
   // ===== MISSING PROJECTS =====
 {
   project: "Meta Prometheus",
